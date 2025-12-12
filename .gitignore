@@ -5,21 +5,26 @@ bot_sessions/
 db.js
 .env
 
+.wwebsite_auth/
+.wwebsite_cache/
 
-
-
+core.class.log/
+docker-compose.yml
+Dockerfile
 
 *.log
 logs/
 
+.wwebjs_cache/
 
 bot.qr.png
 
+.tar
 
 .DS_Store
 Thumbs.db
 .vscode/
-
+.env
 
 dist/
 build/

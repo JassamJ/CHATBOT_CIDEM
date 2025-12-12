@@ -1,9 +1,12 @@
-FROM node:18-bullseye as bot
+FROM node:18
+
 WORKDIR /app
+
 COPY package*.json ./
-RUN npm i
+RUN npm install
+
 COPY . .
-ARG RAILWAY_STATIC_URL
-ARG PUBLIC_URL
-ARG PORT
+
+EXPOSE 3000
+
 CMD ["npm", "start"]
